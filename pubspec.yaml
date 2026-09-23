@@ -1,0 +1,39 @@
+name: qr_urun_tarama
+description: "Tarım Deposu Ürün ve Barkod Tarama Uygulaması"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Barkod tarayıcı kütüphanesi
+  mobile_scanner: ^6.0.11
+
+  # Web sitesinden veri çekme kütüphaneleri
+  http: ^1.2.0
+  html: ^0.15.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    background_color: "#000000"
+    theme_color: "#2E7D32"
